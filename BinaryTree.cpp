@@ -82,7 +82,11 @@ public:
             return;
         }
 
+        // Step.7: If the value in the data field of new Node is greater than that of the new Node
+        else if (x > parent->info)
+        {
+            
+        }
 
-        
     }
 };
