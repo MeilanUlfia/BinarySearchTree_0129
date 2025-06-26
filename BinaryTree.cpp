@@ -100,5 +100,18 @@ public:
         return ROOT == nullptr;
     }
 
-    
+    void inorder(Node *ptr)
+    {
+        if (isEmpty())
+        {
+            cout << "Tree is empty" << endl;
+            return;
+        }
+        if (ptr == nullptr)
+            return;
+
+        inorder(ptr->leftchild);
+        cout << ptr->info << " "; // parent
+        inorder(ptr->rightchild);
+    }
 };
