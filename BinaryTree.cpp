@@ -85,7 +85,11 @@ public:
         // Step.7: If the value in the data field of new Node is greater than that of the new Node
         else if (x > parent->info)
         {
-            
+            // 7a : Make the right chlid of parent point to the new Node
+            parent->rightchild = newNode;
+
+            // 7b : Exit
+            return;
         }
 
     }
