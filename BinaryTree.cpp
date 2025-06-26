@@ -93,4 +93,12 @@ public:
         }
 
     }
+
+     bool isEmpty()
+    {
+        // Checks if the tree is empty
+        return ROOT == nullptr;
+    }
+
+    
 };
